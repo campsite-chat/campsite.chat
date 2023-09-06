@@ -55,7 +55,7 @@ export default function HomeHeader() {
     return (
         <>
             <div className='flex flex-col items-center justify-center gap-6 pt-48 text-center'>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" fill="none" className="w-64">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" fill="none" className="w-80">
                     <g filter="url(#filter0_d_13_2)" id="home-tent">
                         <path d="M538.002 252.851L412.596 34.2604C410.208 30.0972 405.859 27.5425 401.16 27.5425H196.865C186.585 27.5425 180.203 39.041 185.427 48.1483L310.834 266.739C313.222 270.903 317.571 273.458 322.27 273.458H526.565C536.845 273.458 543.227 261.959 538.002 252.851Z" fill="currentColor" />
                     </g>
@@ -89,7 +89,7 @@ export default function HomeHeader() {
                     <aside className='text-neutral-400' id="aside">
                         Introducting Campsite...
                     </aside>
-                    <h1 className='font-sans text-2xl font-black lg:text-7xl'>
+                    <h1 className='font-sans text-2xl font-black sm:text-3xl md:text-5xl lg:text-7xl'>
                         <span id="a">
                             A {" "}
                         </span>

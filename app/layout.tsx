@@ -3,6 +3,7 @@ import { Anybody, Inter } from 'next/font/google';
 
 import './globals.css';
 import Providers from '@/components/providers';
+import Navbar from '@/components/navbar';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -40,6 +41,7 @@ export default function RootLayout({
             }}
           >
             <div className='max-w-[100rem] m-auto'>
+              <Navbar />
               {children}
             </div>
           </div>
