@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "./ui/button";
 import { ThemeToggle } from "./theme-toggle";
 import AnimatedLogo from "./logo";
@@ -13,24 +15,24 @@ export default function Navbar() {
                             <AnimatedLogo />
                         </Link>
                     </div>
-                    <div className="flex-row hidden gap-6 sm:flex">
+                    <div className="flex-row hidden gap-8 sm:flex">
                         <Link href="/download">
-                            <button className="transition-all duration-300 hover:underline underline-offset-4">
+                            <button className="transition-all duration-300 dark:text-neutral-400 dark:hover:text-white underline-offset-4">
                                 Download
                             </button>
                         </Link>
                         <Link href="/blog">
-                            <button className="transition-all duration-300 hover:underline underline-offset-4">
+                            <button className="transition-all duration-300 dark:text-neutral-400 dark:hover:text-white underline-offset-4">
                                 Blog
                             </button>
                         </Link>
                         <Link href="/support">
-                            <button className="transition-all duration-300 hover:underline underline-offset-4">
+                            <button className="transition-all duration-300 dark:text-neutral-400 dark:hover:text-white underline-offset-4">
                                 Support
                             </button>
                         </Link>
                         {/* <Link href="https://status.campsite.chat">
-                            <button className="transition-all duration-300 hover:underline underline-offset-4">
+                            <button className="transition-all duration-300 underline-offset-4">
                                 Status
                             </button>
                         </Link> */}
