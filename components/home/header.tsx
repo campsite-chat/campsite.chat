@@ -63,8 +63,8 @@ export default function HomeHeader() {
                         <path d="M245.083 273.458H70.8614C58.636 273.458 50.8082 259.45 56.5418 247.831L138.812 81.073C144.745 69.0483 160.621 68.6429 167.077 80.3512L259.026 247.108C265.439 258.739 257.649 273.458 245.083 273.458Z" fill="currentColor" />
                     </g>
                     <defs>
-                        <filter id="filter0_d_13_2" x="183.564" y="27.5425" width="390.302" height="271.915" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <p>`</p>                        <filter id="filter0_d_13_2" x="183.564" y="27.5425" width="390.302" height="271.915" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                            <feFlood floodOpacity="0" result="BackgroundImageFix" />
                             <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
                             <feOffset dx="28" dy="20" />
                             <feGaussianBlur stdDeviation="3" />
@@ -73,8 +73,8 @@ export default function HomeHeader() {
                             <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_13_2" />
                             <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_13_2" result="shape" />
                         </filter>
-                        <filter id="filter1_d_13_2" x="54.6263" y="71.8072" width="240.694" height="227.65" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <filter id="filter1_d_13_2" x="54.6263" y="71.8072" width="240.694" height="227.65" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                            <feFlood floodOpacity="0" result="BackgroundImageFix" />
                             <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
                             <feOffset dx="28" dy="20" />
                             <feGaussianBlur stdDeviation="3" />
