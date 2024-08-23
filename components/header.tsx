@@ -105,7 +105,7 @@ export function Header() {
 					<Link className="text-md flex items-center" href="/">
 						<Icons.Campsite className='w-8 h-8' />
 					</Link>
-					<div className='ml-auto items-center gap-2 flex flex-row'>
+					<div className='ml-auto items-center gap-2 flex-row hidden md:flex'>
 						<Link href="/">
 							<Button variant="link">
 								About
@@ -123,7 +123,7 @@ export function Header() {
 						</Link>
 					</div>
 
-					<div className="ml-auto flex h-full items-center">
+					<div className="ml-auto hidden md:flex h-full items-center">
 						<ThemeToggle />
 					</div>
 					<button
