@@ -7,7 +7,7 @@ const footerNavs = [
       label: "About",
       items: [
          {
-            href: "/about",
+            href: "/",
             name: "About",
             disabled: false
          },
