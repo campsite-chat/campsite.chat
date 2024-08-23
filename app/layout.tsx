@@ -1,28 +1,57 @@
-import type { Metadata } from "next";
-import { REM } from "next/font/google";
-import { ThemeProvider } from "next-themes";
+import type { Metadata } from "next"
+import { Inter as FontSans } from "next/font/google"
+import { SiteFooter } from "~/components/footer"
+import { Header } from "~/components/header"
+import { ThemeProvider } from "~/components/theme/provider"
+import Particles from "~/components/ui/particles"
+import { Toaster } from "~/components/ui/sonner"
+import { ny } from "~/lib/utils"
 
-import "./globals.css";
+import "~/styles/globals.css"
 
-const rem = REM({ subsets: ["latin"] });
-
+const fontSans = FontSans({
+   subsets: ["latin"],
+   variable: "--font-sans",
+})
 export const metadata: Metadata = {
-    title: "Coming Soon",
-    description: "Time to cut the cord.",
-};
+   title: "Campsite",
+   description: "Time to cut the cord.",
+}
 
 export default function RootLayout({
-    children,
+   children,
 }: Readonly<{
-    children: React.ReactNode;
+   children: React.ReactNode
 }>) {
-    return (
-        <html lang="en" suppressHydrationWarning>
-            <body className={rem.className}>
-                <ThemeProvider storageKey="theme" defaultTheme="dark">
-                    {children}
-                </ThemeProvider>
-            </body>
-        </html>
-    );
+   return (
+      <html lang="en" suppressHydrationWarning>
+         <body
+            className={ny(
+               "bg-background min-h-screen font-sans antialiased",
+               fontSans.variable,
+            )}
+         >
+            <ThemeProvider
+               attribute="class"
+               defaultTheme="dark"
+               disableTransitionOnChange
+            >
+               <Header />
+               <main className="mx-auto flex-1 overflow-hidden">
+                  {children}
+                  <Particles
+                     className="absolute inset-0 -z-10"
+                     quantity={50}
+                     ease={70}
+                     size={0.05}
+                     staticity={40}
+                     color="#ffffff"
+                  />
+               </main>
+               <SiteFooter />
+               <Toaster />
+            </ThemeProvider>
+         </body>
+      </html>
+   )
 }
