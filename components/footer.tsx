@@ -77,10 +77,10 @@ export function SiteFooter() {
                   </Link>
                   <div className="flex flex-col min-h-full justify-between">
                   <p className="max-w-xs">A new communication platform built from the ground up.</p>
-                     <div className="flex flex-row gap-2 items-center">
+                     <Link className="flex flex-row gap-2 items-center" href="https://nordstud.io">
                         A <Icons.Nord className="w-4 h-4" /> Nord Studio 
                         project.
-                  </div>
+                     </Link>
                   </div>
                </div>
                <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-10">
@@ -127,7 +127,7 @@ export function SiteFooter() {
                   {" "}
                   {new Date().getFullYear()}
                   {" "}
-                  <Link href="/" className="cursor-pointer">
+                  <Link href="https://nordstud.io" className="cursor-pointer">
                      Nord Studio
                   </Link>
                   . All Rights Reserved.
