@@ -19,7 +19,7 @@ const footerNavs = [
          {
             href: "/roadmap",
             name: "Roadmap",
-            disabled: true
+            disabled: false
          },
       ]
    },

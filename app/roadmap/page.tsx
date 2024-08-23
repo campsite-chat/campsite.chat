@@ -52,7 +52,46 @@ const preAlphaTimeline = [
 		title: "Notifications",
 		description: "Get notified when someone messages you, or when your friend requests are accepted.",
 	},
-]
+];
+
+const alphaTimeline = [
+	{
+		title: "Voice Calls",
+		description: "Talk to your friends in real-time with our voice call feature.",
+	},
+	{
+		title: "Video Calls",
+		description: "See your friends in real-time with our video call feature.",
+	},
+	{
+		title: "Screen Sharing",
+		description: "Share your screen with your friends during a call.",
+	},
+	{
+		title: "Moderation",
+		description: "Moderate your Camps and Group Chats with our moderation tools.",
+	},
+	{
+		title: "Custom Emojis",
+		description: "Upload your own custom emojis to use in your Camps and Group Chats.",
+	},
+	{
+		title: "Bots",
+		description: "Automate your Campsite experience with custom bots.",
+	},
+	{
+		title: "Profile Connections",
+		description: "Integrate your favourite services into your Campsite profile and show off where else people can find you.",
+	},
+	{
+		title: "Mobile Support",
+		description: "Start intergrating mobile support with Tauri V2.",
+	},
+];
+
+const privateBetaTimeline = [];
+const betaTimeline = [];
+const releaseTimeline = [];
 
 function TimeLineCard({ title, description, done = false, last = false }: { title: string; description: string, done?: boolean, last?: boolean }) {
 	return (
@@ -87,7 +126,38 @@ export default function RoadmapPage() {
 						))}
 					</Timeline>
 					<h2 className="text-2xl font-bold">Alpha</h2>
-					<p>More coming soon...</p>
+					<Timeline>
+						{alphaTimeline.map((item, index, array) => (
+							<TimeLineCard key={index} {...item} last={array.length - 1 === index} />
+						))}
+					</Timeline>
+					<h2 className="text-2xl font-bold">Private Beta</h2>
+					<Timeline>
+						<span>
+							TBA
+						</span>
+						{/* {privateBetaTimeline.map((item, index, array) => (
+							<TimeLineCard key={index} {...item} last={array.length - 1 === index} />
+						))} */}
+					</Timeline>
+					<h2 className="text-2xl font-bold">Beta</h2>
+					<Timeline>
+						<span>
+							TBA
+						</span>
+						{/* {betaTimeline.map((item, index, array) => (
+							<TimeLineCard key={index} {...item} last={array.length - 1 === index} />
+						))} */}
+					</Timeline>
+					<h2 className="text-2xl font-bold">Release 1.0</h2>
+					<Timeline>
+						<span>
+							TBA
+						</span>
+						{/* {releaseTimeline.map((item, index, array) => (
+							<TimeLineCard key={index} {...item} last={array.length - 1 === index} />
+						))} */}
+					</Timeline>
 				</div>
 			</main>
 		</>

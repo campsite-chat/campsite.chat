@@ -37,11 +37,11 @@ export default function RootLayout({
                disableTransitionOnChange
             >
                <Header />
-               <main className="mx-auto flex-1 overflow-hidden">
+               <main className="mx-auto flex-1 overflow-hidden min-h-screen">
                   {children}
                   <Particles
                      className="absolute inset-0 -z-10"
-                     quantity={50}
+                     quantity={100}
                      ease={70}
                      size={0.05}
                      staticity={40}
