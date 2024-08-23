@@ -78,7 +78,7 @@ export default function RoadmapPage() {
 					We're working hard to bring you the best experience possible. Here's what we have planned.
 				</p>
 				<div
-					className="animate-fade-up w-[800px] mt-16 opacity-0 [--animation-delay:400ms] [perspective:2000px] flex flex-col gap-4 items-start"
+					className="animate-fade-up max-w-[800px] mt-16 opacity-0 [--animation-delay:400ms] [perspective:2000px] flex flex-col gap-4 items-start"
 				>
 					<h2 className="text-2xl font-bold">Pre-Alpha</h2>
 					<Timeline>
