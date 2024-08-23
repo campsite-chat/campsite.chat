@@ -1,4 +1,4 @@
-export default function TeamPage({ children }: { children: React.ReactNode }) {
+export default function TeamPage() {
 	return (
 		<>
 			<main className="relative mx-auto my-48 max-w-7xl px-6 text-center md:px-8">
