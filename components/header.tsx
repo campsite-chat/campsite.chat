@@ -149,7 +149,7 @@ export function Header() {
 					)}
 				>
 					<div className="container flex h-14 items-center justify-between">
-						<Link className="text-md flex items-center" href="/">
+						<Link className="text-md flex items-center" href="/" onClick={() => setHamburgerMenuIsOpen(open => !open)}>
 							<Icons.Campsite className='w-8 h-8' />
 						</Link>
 
@@ -174,9 +174,9 @@ export function Header() {
 								className="border-grey-dark border-b py-0.5 pl-6 md:border-none"
 							>
 								<Link
-									className={`hover:text-grey flex h-[var(--navigation-height)] w-full items-center text-xl transition-[color,transform] duration-300 md:translate-y-0 md:text-sm md:transition-colors ${hamburgerMenuIsOpen ? '[&_a]:translate-y-0' : ''
-										}`}
+									className={`hover:text-grey flex h-[var(--navigation-height)] w-full items-center text-xl transition-[color,transform] duration-300 md:translate-y-0 md:text-sm md:transition-colors ${hamburgerMenuIsOpen ? '[&_a]:translate-y-0' : ''}`}
 									href={item.href}
+									onClick={() => setHamburgerMenuIsOpen(open => !open)}
 								>
 									{item.label}
 								</Link>
