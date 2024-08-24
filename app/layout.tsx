@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { Inter as FontSans } from "next/font/google"
 import { SiteFooter } from "~/components/footer"
 import { Header } from "~/components/header"
+import ParticleBackground from "~/components/particles"
 import { ThemeProvider } from "~/components/theme/provider"
 import Particles from "~/components/ui/particles"
 import { Toaster } from "~/components/ui/sonner"
@@ -13,6 +14,7 @@ const fontSans = FontSans({
    subsets: ["latin"],
    variable: "--font-sans",
 })
+
 export const metadata: Metadata = {
    title: "Campsite",
    description: "Time to cut the cord.",
@@ -39,14 +41,7 @@ export default function RootLayout({
                <Header />
                <main className="mx-auto flex-1 overflow-hidden min-h-screen">
                   {children}
-                  <Particles
-                     className="absolute inset-0 -z-10"
-                     quantity={100}
-                     ease={70}
-                     size={0.05}
-                     staticity={40}
-                     color="#ffffff"
-                  />
+                  <ParticleBackground />
                </main>
                <SiteFooter />
                <Toaster />
