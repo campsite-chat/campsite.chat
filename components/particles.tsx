@@ -9,7 +9,7 @@ export default function ParticleBackground() {
 		<>
 			<Particles
 				className="absolute inset-0 -z-10"
-				quantity={125}
+				quantity={75}
 				ease={70}
 				size={theme === "dark" ? 0.05 : 0.10}
 				staticity={40}
