@@ -109,7 +109,7 @@ function TimeLineCard({ title, description, done = false, last = false }: { titl
 export default function RoadmapPage() {
 	return (
 		<>
-			<main className="relative mx-auto my-48 items-center flex flex-col max-w-7xl px-6 text-center md:px-8">
+			<main className="relative mx-auto my-32 items-center flex flex-col max-w-7xl px-6 text-center md:px-8">
 				<h1 className="animate-fade-in -translate-y-4 text-balance bg-gradient-to-br from-black from-30% to-black/40 bg-clip-text py-6 text-5xl font-bold leading-none tracking-tighter text-transparent opacity-0 [--animation-delay:200ms] sm:text-5xl md:text-6xl lg:text-7xl dark:from-white dark:to-white/40">
 					What's next for Campsite?
 				</h1>
