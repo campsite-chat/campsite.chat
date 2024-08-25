@@ -29,7 +29,7 @@ export default function HeroSection() {
             Campsite is a new communication platform built from the ground up with 
             <br className="hidden md:block" />
             {" "}
-            Rust and TypeScript to bring you a secure, fast, and sleek-looking chat app.
+            Rust and TypeScript to bring you a secure, fast, and sleek chat app.
          </p>
          <Button className="animate-fade-in disabled -translate-y-4 gap-1 rounded-lg text-white opacity-0 ease-in-out [--animation-delay:600ms] dark:text-black">
             <span>Download Now</span>
