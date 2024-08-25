@@ -11,9 +11,8 @@ export default function TeamPage() {
 					We believe communication is the foundation of <SparklesText text="everything." sparklesCount={5} colors={{ first: "var(--color-one)", second: "var(--color-two)" }} className="text-5xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl" />
 				</h1>
 				<p className="animate-fade-in mb-12 -translate-y-4 text-balance text-lg tracking-tight text-gray-400 opacity-0 [--animation-delay:400ms] md:text-xl">
-					Everything starts with conversation. Campsite was born from discourse about the lack of stable, standerdized communication platforms. We're here to change that.
+					Everything starts with conversation. Campsite was born from discourse about the lack of stable, standerdized communication platforms. We're aspire to change that.
 				</p>
-
 				<div
 					className="animate-fade-up mt-16 opacity-0 [--animation-delay:400ms] [perspective:2000px] flex flex-col gap-6 items-center w-full"
 				>
@@ -31,7 +30,7 @@ export default function TeamPage() {
 									Machine Girl's #1 Fan
 								</span>
 								<p className="m-0 text-sm">
-									Founder, Engineer, Lead of Design
+									Founder, Lead of Design, Engineer
 								</p>
 								<div className="mt-3 flex flex-row space-x-2">
 									<Link href="https://github.com/tygrxqt">
@@ -51,7 +50,7 @@ export default function TeamPage() {
 									Spaghetti Enthusiast
 								</span>
 								<p className="m-0 text-sm">
-									Rust Engineer, Lead of Backend
+									Lead of Backend, Rust Engineer
 								</p>
 								<div className="mt-3 flex flex-row space-x-2">
 									<Link href="https://github.com/NyanSpaghetti">
