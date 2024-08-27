@@ -21,7 +21,7 @@ export default function TeamPage() {
 					</h2>
 					<div className="flex flex-col justify-start lg:justify-center gap-8 lg:gap-12 lg:items-center flex-wrap max-w-[400px] lg:max-w-full w-full md:flex-row items-start">
 						<div className="flex flex-row gap-4 items-center text-start">
-							<Image src="https://github.com/tygrxqt.png" alt="tygrdev" width={144} height={144} className="border border-black/10 dark:border-white/10 rounded-lg" />
+							<Image src="https://github.com/tygrdotdev.png" alt="tygrdev" width={144} height={144} className="border border-black/10 dark:border-white/10 rounded-lg" />
 							<div className="flex flex-col">
 								<h3 className="mb-0 mt-2 text-xl font-bold">
 									tygrdev
