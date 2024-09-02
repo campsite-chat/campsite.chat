@@ -33,7 +33,7 @@ export default function TeamPage() {
 									Founder, Lead of Design, Engineer
 								</p>
 								<div className="mt-3 flex flex-row space-x-2">
-									<Link href="https://github.com/tygrxqt">
+									<Link href="https://github.com/tygrdotdev">
 										<GitHubLogoIcon className="w-6 h-6 cursor-pointer" />
 									</Link>
 								</div>
