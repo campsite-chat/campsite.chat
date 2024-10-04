@@ -30,7 +30,7 @@ const preAlphaTimeline = [
 	},
 	{
 		title: "Direct Messages",
-		description: "Communicate with your fellow friends one-on-one in a secure manor.",
+		description: "Communicate with your fellow friends one-on-one in a secure manner.",
 	},
 	{
 		title: "Group Chats",
