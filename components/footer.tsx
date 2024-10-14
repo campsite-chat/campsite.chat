@@ -14,7 +14,7 @@ const footerNavs = [
          {
             href: "/team",
             name: "Team",
-            disabled: true
+            disabled: false
          },
          {
             href: "/roadmap",
@@ -63,7 +63,7 @@ const footerSocials = [
    }
 ]
 
-export function SiteFooter() {
+export function Footer() {
    return (
       <footer>
          <div className="mx-auto w-full max-w-screen-xl xl:pb-2">

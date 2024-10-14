@@ -1,10 +1,9 @@
 import type { Metadata } from "next"
 import { Inter as FontSans } from "next/font/google"
-import { SiteFooter } from "~/components/footer"
+import { Footer } from "~/components/footer"
 import { Header } from "~/components/header"
 import ParticleBackground from "~/components/particles"
 import { ThemeProvider } from "~/components/theme/provider"
-import Particles from "~/components/ui/particles"
 import { Toaster } from "~/components/ui/sonner"
 import { ny } from "~/lib/utils"
 
@@ -43,7 +42,7 @@ export default function RootLayout({
                   {children}
                   <ParticleBackground />
                </main>
-               <SiteFooter />
+               <Footer />
                <Toaster />
             </ThemeProvider>
          </body>
